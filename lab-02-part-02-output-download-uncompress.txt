@@ -127,7 +127,7 @@ Write the command that you used to change to your home directory.  If you were a
 ==========
 13. So... the lab materials are located at this url:
 
-https://filebin.net/retypweqyn7h8vrg/mtec1003-lab-02.zip?t=a0ulqlss
+https://entertainmenttechnology.github.io/Viera-MTEC1003-fall-2018/mtec1003-lab-02.zip
 
 Download the file using curl... to a file called mtec1003-lab-02.zip using the commandline.  
 
@@ -222,7 +222,7 @@ List your files again.... you should have a new file with a .gz extension.  Copy
 ==========
 22. Move stuff.tar.gz into the lab directory that we downloaded.  We didn't learn this command yet, so just type in exactly as is:
 
-$ mv stuff.tar.gz mtec1002-lab-02 
+$ mv stuff.tar.gz mtec1003-lab-02 
 
 MAKE SURE YOU MOVE THE FILE THAT ENDS IN .gz!
 
@@ -252,7 +252,7 @@ List the files.  Copy and paste the output below (the folder, stuff, should be t
 ==========
 25. Download and uncompress this file using curl and tar -xvf in your home directory:
 
-https://filebin.net/retypweqyn7h8vrg/secret.tar.gz?t=5jze7uyg
+https://entertainmenttechnology.github.io/Viera-MTEC1003-fall-2018/secret.tar.gz
 
 REMEMBER to use the -o flag and specifiy a filenmae that ends in .tar.gz
 
