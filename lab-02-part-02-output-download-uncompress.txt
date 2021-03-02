@@ -127,9 +127,9 @@ Write the command that you used to change to your home directory.  If you were a
 ==========
 13. So... the lab materials are located at this url:
 
-http://foureyes.github.io/mtec1002-spring2014/labs/02/mtec1002-lab-02.zip
+https://filebin.net/retypweqyn7h8vrg/mtec1003-lab-02.zip?t=a0ulqlss
 
-Download the file using curl... to a file called mtec1002-lab-02.zip using the commandline.  
+Download the file using curl... to a file called mtec1003-lab-02.zip using the commandline.  
 
 REMEMBER to use the -o flag, and follow it with a .zip extension! 
 
@@ -252,7 +252,7 @@ List the files.  Copy and paste the output below (the folder, stuff, should be t
 ==========
 25. Download and uncompress this file using curl and tar -xvf in your home directory:
 
-http://foureyes.github.io/mtec1002/labs/02/secret.tar.gz
+https://filebin.net/retypweqyn7h8vrg/secret.tar.gz?t=5jze7uyg
 
 REMEMBER to use the -o flag and specifiy a filenmae that ends in .tar.gz
 
