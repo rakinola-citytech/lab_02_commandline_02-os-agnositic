@@ -14,89 +14,148 @@ Feel free to use your workstation to test your answers to the questions that don
 1. Write the command that you would use to change to the root directory.
 ----------
 
-
+$cd /
 
 ==========
 2. Write the command that you would use to change to your home directory.
 ----------
 
+$cd ~ 
 
 
 ==========
 3. Write the command that you would use to change to your Desktop folder.
 ----------
 
-
+$cd ~/Desktop
 
 ==========
 4. What's the absolute path to your home directory?
 ----------
 
-
+$cd ~
 
 ==========
 5. What's the absolute path to your Desktop directory?
 ----------
 
-
+$cd ~/Desktop
 
 ==========
-6. What's the absolute path to your Desktop directory?
+6. What's the relative path to your Desktop directory?
 ----------
 
-
+$cd /User/ms.akinola/Desktop
 
 ==========
 7. If you're in your home directory, what's the relative path to your Desktop directory?
 ----------
 
+$cd /User/ms.akinola/Desktop
 
 ==========
 8. If you're in your home directory, how would you create a new directory on your desktop called stuff without changing your directory?  Write your command below.
 ----------
 
-
+$mkdir Desktop/stuff
 
 ==========
 9. If you're in your root directory, how would you create a new directory on your desktop called more-stuff without changing your directory?  Write your command below.
 ----------
 
-
+$mkdir ~/Desktop/More-Stuff
 
 ==========
 10. If you're in your Desktop directory, how would you create a new directory on your desktop called even-more-stuff?  Write your command below.
 ----------
 
-
+$mkdir Even-More-Stuff
 
 ==========
 11. If you're in your home directory, how would you change to the directory right above it using a relative path (it should bring you to /Users)?  Write your command below.
 ----------
 
-
+$cd ..
+$pwd 
+/Users
 
 ==========
 12. If you're in your Desktop directory, how would you change to two directories right above it (again, this should be /Users) using a relative path?  Write your command below.
 ----------
 
-
+$cd ../..
+$pwd
+/Users
 
 ==========
 13. What's the shortcut for changing to the directory that you were just previously in?  For example, if I were in /Volumes... and I changed to /Users/profesor/Desktop, what's a quick way of changing to /Volumes without writing something like cd /Volumes?
 ----------
 
+//Note: bash saves command line history. You can print in on the commmand line using $history command and then $!(followed by the nummber where the command is saved)
+
+//Or just use <UP> button to scroll through previous entries
+
+$history
+$!519
+
+            OR
+
+<UP>
+<UP>
+
 ==========
 14. How would you show all of the files (including hidden ones) with detailed (long) information that are on you're Desktop if you're in your home directory?  Write your command below.
 ----------
+
+$ls -l Desktop
+
+//Command works without needing to change directory to Desktop. Is that odd?
 
 ==========
 Optional Challenge:
 
 a. Create the following directory structure on...
+
+$mkdir Desktop/mystuff
+
 b. A folder called my-stuff should be on your desktop.  There should be two additional directories within it: archived, current.
+
+ $cd mystuff
+ $mkdir archived current
+ 
+           OR
+ $mkdir -p mystuff/archived
+ $mkdir -p mystuff/current
+
 c. Determine the name of your computer.
+
+Macbook
+
 d. Create another directory in my-stuff that's the same name as your computer.
+
+$mkdir -p Desktop/mystuff/Macbook Pro
+
 e. Determine which folder in my-stuff was created most recently by using ls.  (there are some flags that help with this).
+
+$ls -l
+
 f. Remove that folder.
+
+$rmdir Macbook
+$rm -rf Macbook
+
 g. Show all of the commands that you used to complete the above exercise.  (for example, how did you determine which folder in my-stuff was the most recent?).  Use the command: history ... to help you remember what you did!  Paste the commands below.
+
+  568  cd ~
+  569  mkdir Desktop/mystuff
+  570  cd Desktop
+  571  ls -a
+  572  mkdir -p mystuff/archived
+  573  mkdir -p mystuff/current
+  574  mkdir -p mystuff/Macbook
+  575  cd mystuff
+  576  ls -l
+  577  rmdir Macbook 
+  578  history
+
 ----------
